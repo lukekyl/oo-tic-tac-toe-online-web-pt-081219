@@ -41,6 +41,12 @@ class TicTacToe
     end
     valid_move
   end
+   def turn_count
+    
+  end
+  def current_player
+	return turn_count.even? == true ? "X" : "O"
+end
   
   def turn 
     puts "Please choose your move on the board between 1 and 9."
@@ -52,8 +58,6 @@ class TicTacToe
       "Move not valid. Please make a new choice between 1 and 9."
     end
   end
-  def turn_count
-    
-  end
+ 
   
 end
