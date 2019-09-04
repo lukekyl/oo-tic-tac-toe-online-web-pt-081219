@@ -11,11 +11,7 @@ class TicTacToe
     ]
   
   def initialize
-    @board = self.new_board
-  end
-  def self.new_board
     @board = [" "," "," "," "," "," "," "," "," "]
-    @board
   end
   
   
