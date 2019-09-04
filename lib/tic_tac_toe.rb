@@ -27,7 +27,7 @@ class TicTacToe
   def move(choice, token = "X")
     @board[choice] = token
   end
-  def position_taken?
+  def position_taken?(choice)
     taken = true
     if !@board[choice] == " "
       taken = false
