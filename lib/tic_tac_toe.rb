@@ -35,7 +35,11 @@ class TicTacToe
     taken
   end
   def valid_move?(choice)
-    
+    valid_move = false
+    if choice == (0 - 9) && position_taken == false
+      valid_move = true
+    end
+    valid_move
   end
   
 end
