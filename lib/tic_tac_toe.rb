@@ -21,7 +21,10 @@ class TicTacToe
   end
   
   def input_to_index
-    
+    puts "Please pick your next position."
+    gets pick
+    if pick.to_d == (/[1-9/)
+      @board[pick.to_d + 1]
   end
   
 end
