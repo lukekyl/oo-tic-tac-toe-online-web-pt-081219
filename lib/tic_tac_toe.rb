@@ -108,6 +108,7 @@ class TicTacToe
       puts display_board
       puts "Player O won the game!"
     end
+    win
   end
   
 end
