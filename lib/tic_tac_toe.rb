@@ -20,6 +20,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   
+  #Turn Functions
   def input_to_index(input)
     choice = input.to_i - 1
     choice
@@ -53,10 +54,10 @@ class TicTacToe
 	  turns
   end
   def current_player
-	return turn_count.even? == true ? "X" : "O"
-end
+	  return turn_count.even? == true ? "X" : "O"
+  end
   
-  
+  #Takes a Turn
   def turn 
     puts "Please choose your move on the board between 1 and 9."
     input = gets.chomp
@@ -74,6 +75,7 @@ end
     end
   end
  
+  #Analyze progress
   def won?
     WIN_COMBINATIONS.detect{ |combo|
     position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
