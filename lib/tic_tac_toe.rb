@@ -62,8 +62,10 @@ end
     choice = input_to_index(input)
     if valid_move?(choice) == true && current_player == "X"
       move(choice, token = "X")
+      puts display_board
     elsif valid_move?(choice) == true && current_player == "O"
       move(choice, token = "O")
+      puts display_board
     else
       "Move not valid. Please make a new choice between 1 and 9."
     end
