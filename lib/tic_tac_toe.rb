@@ -79,4 +79,7 @@ end
     }
   end
   
+  def full?
+    @board.any?(" ") ? false : true
+  end
 end
