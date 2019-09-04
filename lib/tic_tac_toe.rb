@@ -44,7 +44,7 @@ class TicTacToe
   
   def turn 
     puts "Please choose your move on the board between 1 and 9."
-    gets choice
+    choice = gets.chomp
     input_to_index(choice)
     if valid_move?(choice) == true 
       move(choice, token)
