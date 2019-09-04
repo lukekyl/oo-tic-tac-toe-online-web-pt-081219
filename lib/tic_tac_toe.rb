@@ -51,7 +51,6 @@ class TicTacToe
     else
       "Move not valid. Please make a new choice."
     end
-    
   end
   def turn_count
     
