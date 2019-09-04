@@ -23,7 +23,7 @@ class TicTacToe
   def input_to_index
     puts "Please pick your next position."
     gets pick
-    if pick.to_d == (/[1-9/)
+    if pick.to_d == (1 - 9)
       index = pick.to_d - 1
     else 
       "Please pick a position between 1-9."
