@@ -56,6 +56,7 @@ class TicTacToe
 	return turn_count.even? == true ? "X" : "O"
 end
   
+  
   def turn 
     puts "Please choose your move on the board between 1 and 9."
     input = gets.chomp
@@ -78,8 +79,10 @@ end
     position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
     }
   end
-  
   def full?
     @board.any?(" ") ? false : true
   end
+  
+  
+  
 end
