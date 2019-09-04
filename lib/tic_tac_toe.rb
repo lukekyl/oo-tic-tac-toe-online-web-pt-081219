@@ -34,5 +34,8 @@ class TicTacToe
     end
     taken
   end
+  def valid_move?(choice)
+    
+  end
   
 end
