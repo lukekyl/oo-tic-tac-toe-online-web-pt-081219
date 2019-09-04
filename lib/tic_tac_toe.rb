@@ -42,8 +42,15 @@ class TicTacToe
     valid_move
   end
    def turn_count
-    turns = 0 
-    
+    turns = 0
+	  @board.each do |turn|
+  		if turn == "X"
+  			turns += 1
+  		elsif turn == "O"
+  			turns += 1
+  		end
+	  end
+	  turns
   end
   def current_player
 	return turn_count.even? == true ? "X" : "O"
