@@ -42,4 +42,19 @@ class TicTacToe
     valid_move
   end
   
+  def turn 
+    puts "Please choose your move on the board between 1 and 9."
+    gets choice
+    input_to_index(choice)
+    if valid_move?(choice) == true 
+      move(choice, token)
+    else
+      "Move not valid. Please make a new choice."
+    end
+    
+  end
+  def turn_count
+    
+  end
+  
 end
