@@ -105,6 +105,7 @@ class TicTacToe
       puts display_board
       puts "Player X won the game!"
     elsif won? && current_player == "O"
+      win = "O"
       puts display_board
       puts "Player O won the game!"
     end
