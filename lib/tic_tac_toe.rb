@@ -102,14 +102,22 @@ class TicTacToe
     win = nil
     if won? && current_player == "X"
       win = "O"
-      puts display_board
-      puts "Player O won the game!"
     elsif won? && current_player == "O"
       win = "X"
-      puts display_board
-      puts "Player X won the game!"
     end
     win
+  end
+  
+  #Play Game
+  def play 
+    if !over?
+      turn
+    end
+    if won?
+      puts display_board
+      puts "Player #{winner} won the game!"
+      puts "Congratulations player #{winner}!"
+    
   end
   
 end
