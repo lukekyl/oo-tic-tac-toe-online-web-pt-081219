@@ -4,7 +4,13 @@ class TicTacToe
     @board = self.board
   end
   def self.board
-    
+    board = [
+       " " | " " | " " 
+       ---------------
+       " " | " " | " "
+       ---------------
+       " " | " " | " "
+      ]
   end
   WIN_COMBINATIONS = [
     [0,1,2],
