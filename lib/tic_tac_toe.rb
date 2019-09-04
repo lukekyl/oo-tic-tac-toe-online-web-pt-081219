@@ -98,6 +98,16 @@ class TicTacToe
     end
     over
   end
-  
+  def winner
+    win = nil
+    if won? && current_player == "X"
+      win = "X"
+      puts display_board
+      puts "Player X won the game!"
+    elsif won? && current_player == "O"
+      puts display_board
+      puts "Player O won the game!"
+    end
+  end
   
 end
