@@ -46,10 +46,10 @@ class TicTacToe
     puts "Please choose your move on the board between 1 and 9."
     input = gets.chomp
     choice = input_to_index(input)
-    if valid_move?(choice) == true 
+    if valid_move?(choice) == true && 
       move(choice, token)
     else
-      "Move not valid. Please make a new choice."
+      "Move not valid. Please make a new choice between 1 and 9."
     end
   end
   def turn_count
