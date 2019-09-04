@@ -24,7 +24,7 @@ class TicTacToe
     puts "Please pick your next position."
     gets pick
     if pick.to_d == (/[1-9/)
-      @board[pick.to_d - 1] = move
+      index = pick.to_d - 1
     else 
       "Please pick a position between 1-9."
     end
