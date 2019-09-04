@@ -73,7 +73,7 @@ end
     end
   end
  
-  def won
+  def won?
     win = false
     if @board.include?(WIN_COMBINATIONS)
       win = true
