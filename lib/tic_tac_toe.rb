@@ -5,11 +5,9 @@ class TicTacToe
   end
   def self.board
     board = [
-       " " | " " | " " 
-       ---------------
-       " " | " " | " "
-       ---------------
-       " " | " " | " "
+      [0,1,2],
+      [3,4,5],
+      [6,7,8]
       ]
   end
   WIN_COMBINATIONS = [
