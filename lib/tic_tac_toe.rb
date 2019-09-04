@@ -74,7 +74,6 @@ end
   end
  
   def won?
-    win = false
     WIN_COMBINATIONS.detect{ |combo|
     position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
     }
