@@ -25,8 +25,8 @@ class TicTacToe
     choice
   end
   
-  def move
-    
+  def move(choice, token = "X")
+    @board[choice] = token
   end
   
 end
