@@ -67,7 +67,9 @@ end
       move(choice, token = "O")
       puts display_board
     else
+      puts display_board
       "Move not valid. Please make a new choice between 1 and 9."
+      gets.chomp
     end
   end
  
