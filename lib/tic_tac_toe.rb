@@ -78,7 +78,6 @@ end
     if @board.include?(WIN_COMBINATIONS)
       win = true
     end
-      
   end
   
 end
