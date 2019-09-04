@@ -5,8 +5,8 @@ class TicTacToe
     @board = self.new_board
   end
   def self.new_board
-    board = [" "," "," "," "," "," "," "," "," "]
-    board
+    @board = [" "," "," "," "," "," "," "," "," "]
+    @board
   end
   WIN_COMBINATIONS = [
     [0,1,2],
