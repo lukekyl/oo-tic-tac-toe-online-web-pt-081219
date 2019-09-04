@@ -1,5 +1,6 @@
 class TicTacToe
   
+  
   def initialize
     @board = self.new_board
   end
