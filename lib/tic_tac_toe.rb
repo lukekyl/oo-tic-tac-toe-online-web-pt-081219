@@ -110,17 +110,18 @@ class TicTacToe
   
   #Play Game
   def play 
-    if !over?
+    while !over?
       turn
-    else
-      if won?
-        puts display_board
-        puts "Player #{winner} won the game!"
-        puts "Congratulations player #{winner}!"
-      elsif draw?
-        puts "The game has ended in a draw. Please play again!"
-      end
     end
+    
+    if won?
+      puts display_board
+      puts "Player #{winner} won the game!"
+      puts "Congratulations player #{winner}!"
+    elsif draw?
+      puts "The game has ended in a draw. Please play again!"
+    end
+    
     
   end
   
