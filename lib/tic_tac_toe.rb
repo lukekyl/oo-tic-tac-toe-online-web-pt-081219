@@ -42,6 +42,7 @@ class TicTacToe
     valid_move
   end
    def turn_count
+    turns = 0 
     
   end
   def current_player
