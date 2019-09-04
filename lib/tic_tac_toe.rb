@@ -10,6 +10,7 @@ class TicTacToe
       [6,7,8]
       ]
       board[0-8] = " "
+      board
   end
   WIN_COMBINATIONS = [
     [0,1,2],
