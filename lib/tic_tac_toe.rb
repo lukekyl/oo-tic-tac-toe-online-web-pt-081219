@@ -61,7 +61,9 @@ end
     input = gets.chomp
     choice = input_to_index(input)
     if valid_move?(choice) == true && current_player == "X"
-      move(choice, token)
+      move(choice, token = "X")
+    elsif valid_move?(choice) == true && current_player == "O"
+      move(choice, token = "O")
     else
       "Move not valid. Please make a new choice between 1 and 9."
     end
