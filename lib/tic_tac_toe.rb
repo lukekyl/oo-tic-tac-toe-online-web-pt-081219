@@ -116,8 +116,7 @@ class TicTacToe
     
     if won?
       puts display_board
-      puts "Player #{winner} won the game!"
-      puts "Congratulations player #{winner}!"
+      puts "Congratulations Player #{winner}! You have won the game!"
     elsif draw?
       puts "Cat's Game!"
     end
