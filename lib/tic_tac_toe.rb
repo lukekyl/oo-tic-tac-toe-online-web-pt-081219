@@ -22,6 +22,7 @@ class TicTacToe
   
   def input_to_index(input)
     choice = input.to_i - 1
+    choice
   end
   
   def move
